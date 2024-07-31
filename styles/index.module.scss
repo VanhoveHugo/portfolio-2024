@@ -1,0 +1,206 @@
+@import 'theme';
+
+.hero {
+    min-height: calc(90vh - 2rem);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+    @include above(1000px) {
+        padding: 1rem;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        margin-bottom: .25rem;
+        font-weight: bold;
+        z-index: 5;
+        text-transform: uppercase;
+
+        @include above(1000px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    span {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: none;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        text-align: center;
+        z-index: 5;
+
+        div {
+            display: flex;
+            padding-left: .5rem;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 20%;
+        left: calc(100% + 4px);
+        transform-origin: center;
+        transform: translate(-50%, -50%) rotate(45deg);
+        width: 100vw;
+        height: 100vw;
+        background: $fresh-gradient;
+        border-radius: 8px;
+        z-index: 0;
+        transition: top 200ms;
+
+        @include above(1000px) {
+            top: 50%;
+            width: 100vh;
+            height: 100vh;
+        }
+    }
+}
+
+.about {
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid rgba($black, .25);
+
+    p {
+        font-size: .875rem;
+        letter-spacing: .025rem;
+        line-height: 1.2rem;
+        text-align: justify;
+    }
+}
+
+.services,
+.process {
+    div {
+        margin-top: 2rem;
+
+        div {
+            position: relative;
+            box-shadow: 0 0 5px transparent;
+            transition: all 500ms;
+
+            h3 {
+                color: $light;
+                font-weight: lighter;
+                text-align: center;
+                margin: .5rem 0;
+            }
+
+            p {
+                font-size: .9rem;
+                margin-top: 1rem;
+                text-align: center;
+            }
+
+            svg {
+                font-size: 2rem;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: $gradient;
+                padding: .75rem;
+                border-radius: 8px;
+                color: #fff;
+                transition: all 500ms;
+                box-shadow: 0 0 5px transparent;
+
+            }
+
+            &:hover {
+                color: #000;
+                box-shadow: 0 0 5px rgba($black, .25);
+
+                svg {
+                    box-shadow: 0 0 10px $blue;
+                }
+            }
+        }
+    }
+}
+
+.projets {
+    article {
+        align-items: stretch;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right {
+            width: 100%;
+            padding: .125rem !important;
+            overflow: hidden;
+            height: max-content;
+
+            @include above(700px) {
+                width: calc(50% - 2.25rem - 2px);
+            }
+        }
+
+        header {
+            flex: 1;
+            text-align: center;
+
+            @include above(1000px) {
+                text-align: left;
+            }
+
+            h1 {
+                margin: 1rem;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: .9rem;
+                width: 100%;
+
+                @include above(1000px) {
+                    width: 80%;
+                }
+            }
+        }
+
+        footer {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+
+            @include above(1000px) {
+                justify-content: flex-start;
+            }
+        }
+
+        figure {
+            aspect-ratio: auto 1339 / 644;
+            width: calc(100% - 2px);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba($black, .25);
+
+            @include above(1000px) {
+                height: calc(100% - 1rem)
+            }
+
+            img {
+                min-width: 100%;
+                min-height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

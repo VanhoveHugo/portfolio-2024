@@ -1,0 +1,30 @@
+/**
+ * GontSerrat
+ * Bold
+ * Regular
+ * Light
+ */
+
+/* -- GontSerrat Bold -- */
+@font-face {
+    font-family: 'GontSerrat';
+    src: url('../public/fonts/Gontserrat-Bold.woff') format('woff'),
+        url('../public/fonts/Gontserrat-Bold.woff2') format('woff2'), ;
+    font-weight: 700;
+}
+
+/* -- GontSerrat Regular -- */
+@font-face {
+    font-family: 'GontSerrat';
+    src: url('../public/fonts/Gontserrat-Regular.woff') format('woff'),
+        url('../public/fonts/Gontserrat-Regular.woff2') format('woff2'), ;
+    font-weight: 500;
+}
+
+/* -- GontSerrat Light -- */
+@font-face {
+    font-family: 'GontSerrat';
+    src: url('../public/fonts/Gontserrat-Light.woff') format('woff'),
+        url('../public/fonts/Gontserrat-Light.woff2') format('woff2'), ;
+    font-weight: 300;
+}

@@ -1,0 +1,215 @@
+.cta {
+  background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  width: -moz-max-content;
+  width: max-content;
+  color: #fff;
+  font-weight: 300;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+.cta + .iconcta {
+  margin-left: 0.5rem;
+}
+.cta svg {
+  margin-left: 0.5rem;
+}
+
+.iconcta {
+  background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  aspect-ratio: 1/1;
+  min-width: 10px;
+  min-height: 10px;
+  color: #fff;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  border-radius: 50%;
+}
+.iconcta + .iconcta {
+  margin-left: 0.5rem;
+}
+
+.flex4 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.flex4 > * {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+}
+@media screen and (min-width: 700px) {
+  .flex4 > * {
+    width: calc(50% - 6rem - 2px);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .flex4 > * {
+    width: calc(25% - 6rem - 2px);
+  }
+}
+.flex4 div {
+  border: 1px solid rgba(56, 56, 56, 0.25);
+  background: #fff;
+}
+
+.flex3 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.flex3 > * {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+}
+@media screen and (min-width: 700px) {
+  .flex3 > * {
+    width: calc(50% - 6rem - 2px);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .flex3 > * {
+    width: calc(30% - 6rem - 2px);
+  }
+}
+.flex3 div,
+.flex3 article {
+  border: 1px solid rgba(56, 56, 56, 0.25);
+  background: #fff;
+}
+.flex3 div:hover,
+.flex3 article:hover {
+  color: #000;
+  box-shadow: 0 0 5px rgba(56, 56, 56, 0.25);
+}
+
+.flex2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.flex2 > * {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+}
+@media screen and (min-width: 700px) {
+  .flex2 > * {
+    width: calc(50% - 6rem - 2px);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .flex2 > * {
+    width: calc(50% - 6rem - 2px);
+  }
+}
+.flex2 div {
+  border: 1px solid rgba(56, 56, 56, 0.25);
+  background: #fff;
+}
+
+.extern_link {
+  color: #111;
+  position: relative;
+  z-index: 10;
+  padding: 0 0.25rem;
+  text-decoration: underline;
+}
+.extern_link:hover {
+  color: #6D83F2;
+}
+
+.headline {
+  margin: 1rem 0;
+}
+.headline h1 {
+  background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 auto 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+}
+.headline h1 ::-moz-selection {
+  background: rgba(255, 177, 66, 0.5);
+}
+.headline h1 ::selection {
+  background: rgba(255, 177, 66, 0.5);
+}
+@media screen and (min-width: 1000px) {
+  .headline h1 {
+    margin: 0 0 0.5rem;
+  }
+}
+.headline p {
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  text-align: left;
+}
+.headline a:hover {
+  color: #6D83F2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+@media screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.grid article {
+  padding: 1rem;
+  margin: 0;
+}
+.grid figure {
+  aspect-ratio: 1;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.subtitle::before {
+  content: "";
+  position: absolute;
+  left: calc(100% + 1rem);
+  bottom: 5px;
+  height: 1px;
+  width: 100vw;
+  background: linear-gradient(134deg, #6a98f0, #4961dc 99%);
+}/*# sourceMappingURL=portfolio.module.css.map */

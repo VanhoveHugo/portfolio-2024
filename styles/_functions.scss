@@ -1,0 +1,25 @@
+@mixin flex($number) {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  &>* {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 8px;
+    @include above(700px) {
+      width: calc(50% - 6rem - 2px);
+    }
+    @include above(1240px) {
+      width: $number;
+    }
+  }
+}
+
+@mixin above($size) {
+    @media screen and (min-width: $size) {
+      @content
+    }
+  }

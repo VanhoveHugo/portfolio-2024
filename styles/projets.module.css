@@ -1,0 +1,319 @@
+.cta {
+  background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  width: -moz-max-content;
+  width: max-content;
+  color: #fff;
+  font-weight: 300;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+.cta + .iconcta {
+  margin-left: 0.5rem;
+}
+.cta svg {
+  margin-left: 0.5rem;
+}
+
+.iconcta {
+  background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  aspect-ratio: 1/1;
+  min-width: 10px;
+  min-height: 10px;
+  color: #fff;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  border-radius: 50%;
+}
+.iconcta + .iconcta {
+  margin-left: 0.5rem;
+}
+
+.flex4 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.flex4 > * {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+}
+@media screen and (min-width: 700px) {
+  .flex4 > * {
+    width: calc(50% - 6rem - 2px);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .flex4 > * {
+    width: calc(25% - 6rem - 2px);
+  }
+}
+.flex4 div {
+  border: 1px solid rgba(56, 56, 56, 0.25);
+  background: #fff;
+}
+
+.flex3 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.flex3 > * {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+}
+@media screen and (min-width: 700px) {
+  .flex3 > * {
+    width: calc(50% - 6rem - 2px);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .flex3 > * {
+    width: calc(30% - 6rem - 2px);
+  }
+}
+.flex3 div,
+.flex3 article {
+  border: 1px solid rgba(56, 56, 56, 0.25);
+  background: #fff;
+}
+.flex3 div:hover,
+.flex3 article:hover {
+  color: #000;
+  box-shadow: 0 0 5px rgba(56, 56, 56, 0.25);
+}
+
+.flex2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.flex2 > * {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+}
+@media screen and (min-width: 700px) {
+  .flex2 > * {
+    width: calc(50% - 6rem - 2px);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .flex2 > * {
+    width: calc(50% - 6rem - 2px);
+  }
+}
+.flex2 div {
+  border: 1px solid rgba(56, 56, 56, 0.25);
+  background: #fff;
+}
+
+.extern_link {
+  color: #111;
+  position: relative;
+  z-index: 10;
+  padding: 0 0.25rem;
+  text-decoration: underline;
+}
+.extern_link:hover {
+  color: #6D83F2;
+}
+
+.sectionHeader, .sectionContainer {
+  margin: auto;
+}
+
+.sectionHeader {
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(56, 56, 56, 0.25);
+}
+.sectionHeader h1,
+.sectionHeader a {
+  display: flex;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+}
+.sectionHeader h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.sectionHeader a {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.sectionHeader a svg {
+  margin-right: 0.5rem;
+  transition: 200ms;
+}
+.sectionHeader a:hover > * {
+  color: #ffb142;
+}
+
+.headline {
+  margin: 1rem 0;
+}
+.headline h1 {
+  background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+}
+.headline h1 ::-moz-selection {
+  background: rgba(255, 177, 66, 0.5);
+}
+.headline h1 ::selection {
+  background: rgba(255, 177, 66, 0.5);
+}
+@media screen and (min-width: 1000px) {
+  .headline h1 {
+    margin: 0 0 0.5rem;
+  }
+}
+.headline p {
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  .headline p {
+    text-align: left;
+  }
+}
+.headline a:hover {
+  color: #6D83F2;
+}
+
+.sectionContainer {
+  position: relative;
+  display: flex;
+  min-height: calc(100vh - 2rem - 2.25rem - 8.75rem);
+  flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  .sectionContainer {
+    flex-direction: row-reverse;
+  }
+}
+.sectionContainer .imgs {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.sectionContainer .imgs .img {
+  width: 100%;
+  margin-top: 1rem;
+}
+.sectionContainer .imgs .img img {
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid rgba(56, 56, 56, 0.25) !important;
+  border-radius: 8px;
+}
+.sectionContainer .text {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+@media screen and (min-width: 1000px) {
+  .sectionContainer .text {
+    position: sticky;
+    top: 1rem;
+    left: 0;
+    max-width: calc(40% - 2rem);
+    margin: 1rem 0 1rem 1rem;
+  }
+}
+.sectionContainer .text h2 {
+  font-size: 0.825rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.sectionContainer .text h3 {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #4c4c4c;
+  margin-bottom: 0.5rem;
+}
+.sectionContainer .text > p {
+  font-size: 0.7rem;
+  color: #4c4c4c;
+  margin-bottom: 0.5rem;
+  line-height: 1rem;
+}
+.sectionContainer .infos {
+  background: #fff;
+  border: 1px solid rgba(56, 56, 56, 0.25);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  color: #4c4c4c;
+  font-size: 0.625rem;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+  text-align: left;
+  width: calc(100% - 2rem - 2px);
+}
+@media screen and (min-width: 1000px) {
+  .sectionContainer .infos {
+    margin: 1rem auto;
+    text-align: left;
+  }
+}
+.sectionContainer .infos span {
+  display: inline-block;
+  font-weight: bold;
+  width: 5rem;
+  color: #111;
+}
+@media screen and (min-width: 800px) {
+  .sectionContainer .infos span {
+    width: 4.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sectionContainer .infos span {
+    width: 5rem;
+  }
+}
+.sectionContainer .infos a {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+.sectionContainer .button {
+  background: #ff5252;
+  padding: 0.5rem 0.5rem 0.25rem;
+  font-size: 0.8rem;
+  margin: 1rem;
+}/*# sourceMappingURL=projets.module.css.map */

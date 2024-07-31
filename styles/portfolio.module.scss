@@ -1,0 +1,70 @@
+@import 'theme';
+@mixin below($size) {
+  @media screen and (max-width: $size) {
+    @content
+  }
+}
+
+.headline {
+    margin: 1rem 0;
+    h1 {
+        background: $gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0 auto .5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        width: min-content;
+        white-space: nowrap;
+        ::selection {
+            background: rgba($contrast, .5);
+        }
+        @include above(1000px) {
+            margin: 0 0 .5rem;
+        }
+    }
+    p {
+        margin-bottom: .25rem;
+        font-size: .9rem;
+        text-align: left;
+    }
+    a:hover {
+        color: $blue;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    @include below(1000px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include below(700px) {
+        grid-template-columns: 1fr;
+    }
+    article {
+        padding: 1rem;
+        margin: 0;
+    }
+    figure {
+        aspect-ratio: 1;
+    }
+}
+
+.subtitle {
+    font-size: .8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    &::before {
+        content: '';
+        position: absolute;
+        left: calc(100% + 1rem);
+        bottom: 5px;
+        height: 1px;
+        width: 100vw;
+        background: linear-gradient(134deg, #6a98f0, #4961dc 99%);
+    }
+}
